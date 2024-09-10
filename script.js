@@ -64,7 +64,7 @@ async function checkWeather(city) {
       weatherIcon.src =
         'https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/snow.svg';
     } else {
-      console.log(data.weather[0].main);
+      console.log('huh', data.weather[0].main);
     }
   }
 }
