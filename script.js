@@ -54,6 +54,15 @@ async function checkWeather(city) {
     } else if (data.weather[0].main == 'Mist') {
       weatherIcon.src =
         'https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/mist.svg';
+    } else if (data.weather[0].main == 'Haze') {
+      weatherIcon.src =
+        'https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/haze.svg';
+    } else if (data.weather[0].main == 'Fog') {
+      weatherIcon.src =
+        'https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/fog.svg';
+    } else if (data.weather[0].main == 'Snow') {
+      weatherIcon.src =
+        'https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/snow.svg';
     } else {
       console.log(data.weather[0].main);
     }
