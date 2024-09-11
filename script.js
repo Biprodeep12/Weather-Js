@@ -63,6 +63,9 @@ async function checkWeather(city) {
     } else if (data.weather[0].main == 'Snow') {
       weatherIcon.src =
         'https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/snow.svg';
+    } else if (data.weather[0].main == 'Smoke') {
+      weatherIcon.src =
+        'https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/smoke.svg';
     } else {
       console.log('huh', data.weather[0].main);
     }
